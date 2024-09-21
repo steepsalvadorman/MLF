@@ -7,7 +7,7 @@ model = joblib.load('models/logistic_regression_model.joblib')
 vectorizer = joblib.load('models/count_vectorizer.joblib')
 
 # Título de la aplicación
-st.title("Predicción del Nivel CEFR de Textos en Inglés")
+st.title("Predicción del Nivel CEFR de Textos en Español")
 
 # Instrucciones
 st.write("""
