@@ -4,7 +4,7 @@ import pandas as pd
 
 # Cargar el modelo y el vectorizador
 model = joblib.load('models/logistic_regression_model.joblib')
-vectorizer = joblib.load('models/count_vectorizer.joblib')
+vectorizer = joblib.load('models/tfidf_vectorizer.joblib')  
 
 # Título de la aplicación
 st.title("Predicción del Nivel CEFR de Textos en Español")
@@ -20,7 +20,7 @@ input_text = st.text_area("Escriba el texto aquí:")
 # Botón para realizar la predicción
 if st.button("Predecir Nivel"):
     if input_text:
-        # Transformar el texto de entrada
+        # Transformar el texto de entrada con el TfidfVectorizer
         input_text_vec = vectorizer.transform([input_text])
         
         # Realizar la predicción
