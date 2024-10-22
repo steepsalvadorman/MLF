@@ -11,7 +11,7 @@ st.title("Predicción del Nivel CEFR de Textos en Español")
 
 # Instrucciones
 st.write("""
-    Ingrese un texto en inglés para predecir su nivel CEFR (A1, A2, B1, B2 y C1).
+    Ingrese un texto en español para predecir su nivel CEFR (A1, A2, B1, B2 y C1).
 """)
 
 # Entrada de texto
